@@ -6,7 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  <!-- Tab icon -->
     
-    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <title>Frontend Mentor | Newsletter sign-up form</title>
 
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="assets/css/font-face.css"/> <!-- Font Face -->
@@ -28,30 +28,19 @@
                     <li>And much more!</li>
                 </ul>
             </div>
-            <form method="GET" >
+            <form method="GET" id="email-form" action="success.html">
                 <div class="email-text">
                     <label for="input-email">Email address</label>
                     <span id="email-error--message" class="none">Valid email required</span>
                 </div>
-                <input class="input-field" type="email" id="input-email" name="email" placeholder="email@company.com" required="true"/>
-                <button type="button" class="input-field" id="email-btn">Subscribe to monthly newsletter</button>
+                <input class="input-field" type="text" id="input-email" name="email" placeholder="email@company.com"/>
+                <button type="submit" class="input-field" id="email-btn">Subscribe to monthly newsletter</button>
             </form>
         </div>
         <div class="card-image">
             <img id="desktop-illustration--image" src="assets/images/illustration-sign-up-desktop.svg" alt="Desktop Illustarion image"/>
             <img id="mobile-illustration--image" src="assets/images/illustration-sign-up-mobile.svg" alt="Desktop Illustarion image"/>
         </div>
-    </div>
-
-    <div class="card success none" id="card-success">
-        <div class="card-content">
-            <div class="icon-success">
-                <img src="assets/images/icon-success.svg" alt="Right icon"/>
-            </div>
-            <h1>Thanks for subscribing!</h1>
-            <p>A confirmation email has been sent to <span><!-- JS --></span>. Please open it and click the button inside to confirm your subscription.</p>
-        </div>
-        <button class="input-field" id="dismiss-btn">Dismiss message</button>
     </div>
 
     <!-- JS -->
