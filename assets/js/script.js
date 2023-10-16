@@ -17,13 +17,18 @@ function validEmail(e) {
         inputEmail.classList.add('error-state');
         emailErrorMsg.classList.remove('none')
         // Empty the email input
-        inputEmail.value = '';
+        inputEmail.focus()
     } else {
         sessionStorage.setItem("email", inputEmail.value);
-    }
-    
-    
-    
+    }   
+}
+
+function inputDefaultStyle() {
+    emailErrorMsg.classList.add('none');
+    inputEmail.classList.remove('error-state');
+}
+function inputDefaultStyleKeyBoard(e) {
+    if(e.key !== 'Enter') inputDefaultStyle();
 }
 
 // Event Listeners
@@ -31,9 +36,7 @@ function validEmail(e) {
 emailForm.addEventListener("submit", validEmail);
 
 // Make the input email back to normal style when clicking on it
-inputEmail.addEventListener("click", () => {
-    emailErrorMsg.classList.add('none');
-    inputEmail.classList.remove('error-state');
-})
+inputEmail.addEventListener("click", inputDefaultStyle)
+inputEmail.addEventListener("keyup", inputDefaultStyleKeyBoard)
 
 
