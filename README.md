@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Go to solution](https://www.frontendmentor.io/solutions/frontendmentornewslettersignup-R39tHQATbF)
+- Live Site URL: [Go to live site](https://frontend-mentor-newsletter-sign-up-orpin.vercel.app/)
 
 ## My process
 
@@ -56,7 +56,7 @@ This challenge helped me learn how to use regex:
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 ```
 
-I also learned how to reload a page through js:
+I also learned how to reload a page using js:
 ```js
 dismissBtn.addEventListener("click", () => {
     location.reload();
@@ -65,11 +65,11 @@ dismissBtn.addEventListener("click", () => {
 
 ### Continued development
 
-I just started lear js, so there's still A LOT to learn about this language...
+I just started with js, so there is still a LOT to learn about this language. 
 
 ### Useful resources
 
-- [devdocs](https://devdocs.io/) - This is a very good api with concepts of a lot of languages. It helped to understand a lot of js concepts.
+- [devdocs](https://devdocs.io/) - This is a very good api with concepts of a lot of languages. It helped understand a lot of js concepts.
 - [ChatGPT](https://chat.openai.com/) - It help me build regex and understand how to use it.
 
 ## Author
