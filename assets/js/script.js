@@ -19,7 +19,7 @@ function validEmail(e) {
         // Empty the email input
         inputEmail.focus()
     } else {
-        sessionStorage.setItem("email", inputEmail.value);
+        sessionStorage.setItem("email", inputEmail.value.toLowerCase());
     }   
 }
 
